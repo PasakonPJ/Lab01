@@ -35,6 +35,12 @@
                             {{detail}}
                         </li>
                     </ul>
+                    <div v-for="variant in variants">
+                        {{variant.color}}
+                    </div>
+                    <i v-for="size in sizes">
+                        {{size}} <tab>
+                    </i>
                 </div>
             </div>
         </div>
