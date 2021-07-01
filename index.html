@@ -25,9 +25,11 @@
                     <!-- <h1 v-on:click="Movetocamt()">{{product}}</h1> -->
                     <!-- <a v-bind:href="Url"> </a> -->
                     <h1>{{product}}</h1>
-                    <p v-if="inStock"> In stock </p>
+                    <p v-if="inventory <= 10 && inventory > 0"> In Stock </p>
                     <p v-else>Out of Stock</p>
                     <!-- <h2>{{Description}}</h2> -->
+                    <p v-if=""> On sale </p>
+                    <p v-else>not sale</p>
                 </div>
             </div>
         </div>

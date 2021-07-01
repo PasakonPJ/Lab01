@@ -8,7 +8,9 @@ const app = Vue.createApp({
             product: 'Shoes',
             image: './assets/images/socks_green.jpg',
             inStock: true,
-            Url:'https://www.camt.cmu.ac.th/index.php/th/'
+            Url:'https://www.camt.cmu.ac.th/index.php/th/',
+            inventory: 100,
+            onSale: false
         }
     },
     methods:{
