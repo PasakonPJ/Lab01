@@ -28,8 +28,13 @@
                     <p v-if="inventory <= 10 && inventory > 0"> In Stock </p>
                     <p v-else>Out of Stock</p>
                     <!-- <h2>{{Description}}</h2> -->
-                    <p v-if=""> On sale </p>
-                    <p v-else>not sale</p>
+                    <!-- <p v-if=""> On sale </p>
+                    <p v-else>not sale</p> -->
+                    <ul>
+                        <li v-for="detail in details">
+                            {{detail}}
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
