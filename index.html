@@ -22,9 +22,12 @@
                     <img :src="image">
                 </div>
                 <div class="product-info">
-                    <h1 v-on:click="Movetocamt()">{{product}}</h1>
-                    <a v-bind:href="Url"> <h1>{{product}}</h1></a>
-                    <h2>{{Description}}</h2>
+                    <!-- <h1 v-on:click="Movetocamt()">{{product}}</h1> -->
+                    <!-- <a v-bind:href="Url"> </a> -->
+                    <h1>{{product}}</h1>
+                    <p v-if="inStock"> In stock </p>
+                    <p v-else>Out of Stock</p>
+                    <!-- <h2>{{Description}}</h2> -->
                 </div>
             </div>
         </div>

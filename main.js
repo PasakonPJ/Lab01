@@ -2,9 +2,12 @@
 const app = Vue.createApp({
     data() {
         return{
-            product: 'Boots',
-            Description: 'Is boots for cute people',
+            // product: 'Boots',
+            // Description: 'Is boots for cute people',
+            // image: './assets/images/socks_green.jpg',
+            product: 'Shoes',
             image: './assets/images/socks_green.jpg',
+            inStock: true,
             Url:'https://www.camt.cmu.ac.th/index.php/th/'
         }
     },
