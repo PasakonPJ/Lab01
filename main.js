@@ -17,12 +17,16 @@ const app = Vue.createApp({
                 {id:2235, color:'blue'}
             ],
             sizes:['S','M','L'],
+            cart: 0
         }
     },
     methods:{
         Movetocamt(){
             console.log('loveu')
             window.location.href = 'https://www.camt.cmu.ac.th/index.php/th/'
+        },
+        addToCart(){
+          this.cart +=1
         }
     }    
 })
